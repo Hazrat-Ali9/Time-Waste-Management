@@ -4,7 +4,7 @@ const adminController = require("../controllers/adminController");
 const authMiddleware = require("../middleware/adminAuthMiddleware");
 const requestMiddleware = require("../middleware/requestMiddleware");
 let session = require("express-session");
-
+//admin routes
 
 router.use(session({
     secret: "This is session secret",
