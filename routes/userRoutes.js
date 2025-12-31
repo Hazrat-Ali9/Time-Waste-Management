@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const userController = require("../controllers/userControllers");
 const authMiddleware = require("../middleware/authMiddleware");
-
+// user routes
 router.get("/", userController.getHomepage);
 router.get("/signup", userController.getSignupPage);
 router.get("/login", userController.getLoginPage);
